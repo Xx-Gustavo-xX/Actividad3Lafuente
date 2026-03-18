@@ -24,13 +24,24 @@ public class main {
 		System.out.println( persona2.isCasado() + "\n");
 		
 	
-		personaLafuente persona3 = new personaLafuente("Luciano", "Ayala", "2341214", 15, false);
+		personaLafuente persona3 = new personaLafuente(); 
+		persona3.setNombre("Brock");
+		persona3.setApellido("Oak");
+		persona3.setNumeroDocumentoIdentidad("118823912");
+		persona3.setEdad(38);
+		persona3.setCasado(false);
+		 
+		System.out.println("Datos persona 3: " );
+		persona3.mostrarInformacion();
 		
-		System.out.println("Persona3: \n" + persona3.getNombre());
-		System.out.println( persona3.getApellido());
-		System.out.println( persona3.getNumeroDocumentoIdentidad());
-		System.out.println( persona3.getEdad());
-		System.out.println( persona3.isCasado() + "\n");
+		persona3.setNombre("Misty");
+		persona3.setApellido("Ketchup");
+		persona3.setEdad(28);
+		persona3.setNumeroDocumentoIdentidad("374882391");
+		persona3.setCasado(true);
+		
+		System.err.println("Datos actualizados persona 3: ");
+		persona3.mostrarInformacion();
 	}
 
 }

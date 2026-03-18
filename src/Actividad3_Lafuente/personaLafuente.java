@@ -8,7 +8,7 @@ public class personaLafuente {
 	int edad = 0;
 	boolean casado;
 	
-	public void Persona() {
+	public  personaLafuente() {
 		
 	}
 
@@ -53,9 +53,19 @@ public class personaLafuente {
 	public void setCasado(boolean casado) {
 		this.casado = casado;
 	}
-	
-	
 
+	
+	public String informacion() {
+		return " [nombre=" + nombre + ", apellido=" + apellido + ", numeroDocumentoIdentidad="
+				+ numeroDocumentoIdentidad + ", edad=" + edad + ", casado=" + casado + "]";
+		
+	}
+	
+	public void mostrarInformacion() {
+		System.out.println(informacion());
+	}
+	
+	
 	
 	
 	
