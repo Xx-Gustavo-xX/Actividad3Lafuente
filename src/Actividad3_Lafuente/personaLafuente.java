@@ -12,10 +12,15 @@ public class personaLafuente {
 		
 	}
 
+	public personaLafuente(String nombre, String apellido, String numeroDocumentoIdentidad, int edad, boolean casado) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.numeroDocumentoIdentidad = numeroDocumentoIdentidad;
+		this.edad = edad;
+		this.casado = casado;
 	
-
-	
-
+	}
 
 
 	public String getNombre() {
